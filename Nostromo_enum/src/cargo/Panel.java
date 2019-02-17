@@ -10,8 +10,9 @@ public class Panel {
 	
 	public static void test(Mission mission){
 	/***************Power calculation*************/
-	double power = 2e4;
-	mission.power = power;
+	double power = Propulsion.getPower();
+	double totalPower = power + 500000;
+	mission.power = totalPower;
 	
 	
 	}
